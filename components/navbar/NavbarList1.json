@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Our Offerings",
+        "url": "/our-offerings",
+        "subList":[
+            {"title":"Invest","url":"/invest","subList":[{"title":"Mutual Funds","url":"/mutual-funds"},{"title":"Stocks","url":"/stocks"},{"title":"IPO","url":"/ipo"}]},
+            {"title":"Trade","url":"/trade","subList":[{"title":"Futures & Options","url":"/futures-options"},{"title":"MTF","url":"/mtf"},{"title":"BTST","url":"/btst"},{"title":"Cover Order","url":"/cover-order"},{"title":"Bracket Order","url":"/bracket-order"},{"title":"MCX","url":"/mcx"}]}
+        ],
+        "type":"normal"
+    },
+    {
+        "title": "Become a partner",
+        "subList":[
+            {"title":"Benefit of Partnering With Us","url":"/benefit-of-partnering-with-us"},
+            {"title":"Partner With Us","url":"/partner-with-us"}
+        ],
+        "type":"normal"
+    },
+    {
+        "title": "Knowledge Center",
+        "type":"normal"
+    },
+    {
+        "title": "Careers",
+        "type":"normal"
+    },
+    {
+        "title": "Trade",
+        "type":"normal"
+    },
+    {
+        "title": "Backoffice",
+        "type":"normal"
+    }
+]
