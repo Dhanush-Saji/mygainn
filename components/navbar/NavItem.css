@@ -1,6 +1,16 @@
 .topbarLists{
     width: 100%;
 }
+.subMenuLinks{
+    opacity: 0;
+    display: none;
+}
+.mainLinks:hover .subMenuLinks{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: auto;
+    display: flex;
+}
 /* .topbarLists ul{
     position: relative;
     display: flex;

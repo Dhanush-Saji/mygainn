@@ -9,24 +9,35 @@ const NavItem = ({ menuItems = [] }) => {
     <nav className='topbarLists flex'>
       {
         menuItems?.length > 0 && (
-          <ul className='menuHeadings flex gap-4 m-0'>
+          <ul className='flex gap-4 m-0'>
             {
               menuItems?.map((menus, mi_index) => {
-                return <li key={mi_index} className='relative'>
-                  <Link className={'menuHeadingsLink flex items-center'} href={menus.url ? menus.url : '#'}>
+                return <li key={mi_index} className='relative mainLinks'>
+                  <Link className={'flex items-center hover:text-(--corange) font-semibold'} href={menus.url ? menus.url : '#'}>
                     {menus.title} {menus?.submenus?.length > 0 && <ChevronDown className='scale-70' />}
                   </Link>
-                  {menus?.submenus?.length > 0 && <ul className='absolute bg-white z-2' >
+                  {menus?.submenus?.length > 0 && <ul className='subMenuLinks absolute bg-white z-2 min-w-[10rem] w-fit shadow-lg p-3 rounded-lg flex flex-col gap-2' >
                     {
                       menus?.submenus?.map((submenuData, su_index) => {
                         return (
-                          <React.Fragment key={su_index}>
-                            <li key={su_index}>
-                              <Link className={'subMenuLink'} href={submenuData.url}>
-                                {submenuData.title}
-                              </Link>
-                            </li>
-                          </React.Fragment>
+                          <li key={su_index}>
+                            <Link className={'subMenuLink hover:text-(--corange) font-semibold whitespace-nowrap'} href={submenuData.url}>
+                              {submenuData.title}
+                            </Link>
+                            {submenuData?.submenus?.length > 0 && <ul className='subMenuLinks absolute bg-white z-2 min-w-[10rem] w-fit shadow-lg p-3 rounded-lg flex flex-col gap-2' >
+                              {
+                                submenuData?.submenus?.map((subSubMenuData, su_index) => {
+                                  return (
+                                    <li key={su_index}>
+                                      <Link className={'subMenuLink hover:text-(--corange) font-semibold whitespace-nowrap'} href={subSubMenuData.url}>
+                                        {subSubMenuData.title}
+                                      </Link>
+                                    </li>
+                                  )
+                                })
+                              }
+                            </ul>}
+                          </li>
                         )
                       })
                     }
