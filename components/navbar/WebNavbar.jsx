@@ -10,6 +10,7 @@ import { ScrollProgress } from "../ui/scroll-progress";
 import NavbarTabs from "./NavbarTabs";
 import NavItem from "./NavItem";
 import NavbarDataList from "./NavbarList.json"
+import { ShinyButton } from "../ui/shiny-button";
 
 const WebNavbar = () => {
    const router = useRouter()
@@ -28,7 +29,16 @@ const WebNavbar = () => {
         <div className='flex gap-3 items-center'>
           <NavItem menuItems={NavbarDataList || []} />
         </div>
-        <Link href={'https://gkyc.mygainn.com/gainnfintech'} className="bg-[var(--corange)] text-white p-2 rounded-full text-sm font-semibold">Open Demat Account</Link>
+        {/* <ShinyButton >
+          <Link href={'https://gkyc.mygainn.com/gainnfintech'} className="bg-[var(--corange)] text-white p-2 rounded-full text-sm font-semibold">Open Demat Account</Link>
+        </ShinyButton> */}
+
+        <Link href={'https://gkyc.mygainn.com/gainnfintech'}>
+        <ShinyButton className="bg-[var(--corange)] text-white text-sm">
+          Open Demat Account
+        </ShinyButton>
+        </Link>
+        
 
 
         <div className="w-[96%] absolute rounded-full overflow-hidden h-[1rem] left-1/2 -translate-x-1/2 -bottom-[23px] py-[1.5rem] pointer-events-none">

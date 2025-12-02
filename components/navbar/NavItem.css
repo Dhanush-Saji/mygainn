@@ -1,11 +1,11 @@
 .topbarLists{
     width: 100%;
 }
-.subMenuLinks{
+.subMenuLinks, .subSubMenuLinks{
     opacity: 0;
     display: none;
 }
-.mainLinks:hover .subMenuLinks{
+.mainLinks:hover .subMenuLinks, .subSubMainLinks:hover .subSubMenuLinks{
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
     pointer-events: auto;

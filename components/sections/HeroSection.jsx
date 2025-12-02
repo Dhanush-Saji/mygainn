@@ -5,9 +5,9 @@ const HeroSection = () => {
     return (
         <div className="bg-(--cblue1) flex flex-col pt-32 pb-20">
             <div className="flex flex-col absolute left-20 top-1/2 -translate-y-1/2 gap-2 w-[30%] z-[2]">
-                <h2 className="text-(--corange) font-bold">GAINNFINTECH</h2>
-                <h1 className="font-extrabold text-5xl">Invest Right</h1>
-                <h2 className="font-bold text-2xl">Why Are We Different From Others?</h2>
+                <h2 tabIndex={1} className="text-(--corange) font-bold">GAINNFINTECH</h2>
+                <h1 tabIndex={1} className="font-extrabold text-5xl">Invest Right</h1>
+                <h2 tabIndex={1} className="font-bold text-2xl">Why Are We Different From Others?</h2>
             </div>
             <div className="relative">
                 <Image src={'/images/hero-image.png'} alt="Hero Image" width={1200} height={1000} className="mx-auto" />
@@ -32,8 +32,8 @@ const HeroSection = () => {
             </div>
             <div className="flex flex-col gap-3 bg-white w-[70%] mx-auto p-4 py-4 rounded-lg">
                 <div className="flex justify-between gap-2">
-                    <input aria-label="Enter name" type="text" placeholder="Name" className="bg-white border w-full rounded-md p-2" />
-                    <input aria-label="Enter Email ID" type="text" placeholder="Email"  className="bg-white border w-full rounded-md p-2"/>
+                    <input type="text" placeholder="Enter name" className="bg-white border w-full rounded-md p-2" />
+                    <input type="text" placeholder="Enter Email ID"  className="bg-white border w-full rounded-md p-2"/>
                 </div>
                 <button aria-label="Click to start" className="bg-(--corange) text-white p-2 rounded-full text-sm font-semibold w-fit ml-auto">Get Started</button>
             </div>

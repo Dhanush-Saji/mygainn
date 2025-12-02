@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { Highlighter } from "../ui/highlighter";
 
-const WhyChoose = () => {
+const BecomeAuthorizedSection = () => {
     const chooseList = [
         {
             title:'Funds Offerings',des:`Discover, analyse, and invest with ease using Mygainn’s Funds Offerings. Our platform provides smart lists and smart filters, allowing you to search stocks effortlessly. Start exploring the world of investing today!`,url:'/invest',linkText:'Start Investing'
@@ -16,13 +15,8 @@ const WhyChoose = () => {
   return (
     <div className="flex flex-col gap-4 p-22">
         <div className="flex flex-col gap-1 items-center">
-            <h2 className="text-(--corange) font-bold uppercase">benefits</h2>
-            <h1 className="font-extrabold text-5xl">Why Choose 
-                <Highlighter action="underline" color="#FF9800">
-                    MyGainn?
-                </Highlighter>
-                </h1>
-            <h2 className="font-semibold text-2xl mt-2">Choose Excellence, Experience, and Results</h2>
+            <h1 className="font-extrabold text-5xl">Become An Authorised Person</h1>
+            <h2 className="font-extrabold text-2xl">In Just 3 Steps</h2>
         </div>
         <div className="grid grid-cols-3 mt-16 gap-8">
             {
@@ -40,4 +34,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default BecomeAuthorizedSection;
