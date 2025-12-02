@@ -22,7 +22,7 @@ const WebNavbar = () => {
   return (
     <>
       <div className={`fixed transition-all ease-in-out duration-500 px-4 py-3 ${scrollVal > 0.03 ? 'w-[85%] glassMorphism border-black/5' : 'w-[95%] border-transparent'} hidden md:flex items-center justify-between z-[99] border rounded-full top-3 left-[50%] translate-x-[-50%]`}>
-        <Link href={"/"}>
+        <Link href={"/"} >
           <Image src={'/images/logo.png'} alt="Gainn Fintech Logo" width={100} height={100} />
         </Link>
         <div className='flex gap-3 items-center'>

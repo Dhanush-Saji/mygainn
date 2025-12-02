@@ -79,6 +79,7 @@
 
   --cblue:#139ebe;
   --cblue1:#e0f2f8;
+  --cblue2:#2f354e;
   --corange:#f95116;
 
 }
@@ -126,5 +127,5 @@
   }
 }
 body{
-  color: #2f354e;
+  color: var(--cblue2);
 }
