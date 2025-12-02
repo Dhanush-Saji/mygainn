@@ -43,7 +43,7 @@ export const ShinyButton = React.forwardRef(({ children, className, ...props }, 
         }}>
         {children}
       </span>
-      <span
+      {/* <span
         style={{
           mask: "linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box exclude,linear-gradient(rgb(0,0,0), rgb(0,0,0))",
           WebkitMask:
@@ -51,7 +51,7 @@ export const ShinyButton = React.forwardRef(({ children, className, ...props }, 
           backgroundImage:
             "linear-gradient(-75deg,var(--primary)/10% calc(var(--x)+20%),var(--primary)/50% calc(var(--x)+25%),var(--primary)/10% calc(var(--x)+100%))",
         }}
-        className="absolute inset-0 z-10 block rounded-[inherit] p-px" />
+        className="absolute inset-0 z-10 block rounded-[inherit] p-px" /> */}
     </motion.button>
   );
 })

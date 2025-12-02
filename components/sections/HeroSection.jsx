@@ -35,7 +35,7 @@ const HeroSection = () => {
                     <input type="text" placeholder="Enter name" className="bg-white border w-full rounded-md p-2" />
                     <input type="text" placeholder="Enter Email ID"  className="bg-white border w-full rounded-md p-2"/>
                 </div>
-                <button aria-label="Click to start" className="bg-(--corange) text-white p-2 rounded-full text-sm font-semibold w-fit ml-auto">Get Started</button>
+                <button aria-label="Click to start" className="bg-(--cblue2) text-white p-2 rounded-full text-sm font-semibold w-fit ml-auto">Get Started</button>
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ const AllInvestmentSection = () => {
             <ul className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-4">
                 {
                 list.map((item, index) => (
-                    <GridItem
+                    <GridItem key={index}
                     // icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
                     title={item?.title}
                 />
@@ -28,7 +28,7 @@ const AllInvestmentSection = () => {
             {/* <div className="grid grid-cols-3 mt-16 gap-8 px-12">
             {
                 list.map((item, index) => (
-                    <div className="flex flex-col items-center justify-center gap-2 bg-white rounded-xl p-4 w-full min-h-40" key={index}>
+                    <div key={index} className="flex flex-col items-center justify-center gap-2 bg-white rounded-xl p-4 w-full min-h-40" key={index}>
                         <div className="flex justify-center items-center w-14 h-14 bg-(--cblue1) rounded-full"></div>
                         <h2 className="font-bold text-2xl">{item.title}</h2>
                     </div>

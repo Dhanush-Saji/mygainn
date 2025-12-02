@@ -1,5 +1,6 @@
 import AllInvestmentSection from "@/components/sections/AllInvestmentSection";
 import BecomeAuthorizedSection from "@/components/sections/BecomeAuthorizedSection";
+import BusinessModelSection from "@/components/sections/BusinessModelSection";
 import HeroSection from "@/components/sections/HeroSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
 import WhyChoose from "@/components/sections/WhyChoose";
@@ -12,6 +13,7 @@ export default function Home() {
     <WhyChoose />
     <AllInvestmentSection />
     <BecomeAuthorizedSection />
+    <BusinessModelSection />
     <TestimonialSection />
    </div>
   );
