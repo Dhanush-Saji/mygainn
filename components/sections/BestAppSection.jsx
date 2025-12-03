@@ -4,6 +4,8 @@ import { IoPersonOutline } from "react-icons/io5";
 import { PiHandshake } from "react-icons/pi";
 import { LiaConnectdevelop } from "react-icons/lia";
 import { BiBarChartAlt2 } from "react-icons/bi";
+import Image from "next/image";
+import Link from "next/link";
 
 const BestAppSection = () => {
     const list = [
@@ -14,25 +16,23 @@ const BestAppSection = () => {
         {title:'Remisier',icons:<BiBarChartAlt2 className="text-(--cblue) scale-150" />},
     ]
   return (
-    <div className="businessModelSection flex flex-col gap-4 p-22">
-        <div className="flex flex-col gap-1 items-center w-[80%] mx-auto">
-            <h1 className="font-extrabold text-5xl">Business Models For An Authorized Person</h1>
-            <h2 className=" text-lg mt-2 text-center">Our Approach Toward Our Authorised Person Is That Of Them Being An Extension Of Our Brand And An Extension If Our Family. All That We Seek From Our Authorised Person Are Unrelenting Passion For Growth. The Hunger For Scaling Up.</h2>
-        </div>
-        <div className="flex w-full">
-            <div className="flex flex-col gap-6">
-                {
-                    list.map((item, index) => (
-                        <div className="flex gap-4 items-center" key={index}>
-                            <div className="flex justify-center items-center w-14 h-14 bg-(--cblue1) rounded-full">
-                                {item?.icons}
-                            </div>
-                            <p className="text-2xl font-semibold">{item?.title}</p>
-                        </div>
-                    ))
-                }
+    <div className="bg-(--cblue2) flex justify-between gap-4 w-[70%] mx-auto rounded-3xl overflow-hidden">
+        <Image src={'/images/smartphone-img.png'} alt="img" width={300} height={300} className="relative -bottom-12 translate-x-12" />
+        <div className="flex flex-col gap-6 w-[60%] mr-12 my-auto">
+            <h1 className="font-extrabold text-5xl text-white">Business Models For An Authorized Person</h1>
+            <div className="flex w-full bg-white p-2 rounded-lg">
+                <input aria-label="Enter your mobile number" placeholder="Enter your mobile number" type="text" className="bg-white w-full p-2" />
+                <button className="rounded-lg bg-(--cblue) text-white whitespace-nowrap font-semibold p-2">Send App Link</button>
             </div>
-        </div>
+            <div className="flex">
+                <Link target="_blank" href={'https://play.google.com/store/apps/details?id=com.xtrem.mygainn&pli=1'}>
+                <Image src={'/images/playstore-qr.png'} alt="playstore" width={150} height={150} className="cursor-pointer mr-4"/>
+                </Link>
+                <Link target="_blank" href={'https://apps.apple.com/in/app/mygainn/id6446614166'}>
+                <Image src={'/images/apple-qr.png'} alt="apple" width={150} height={150} className="cursor-pointer mr-4"/>
+                </Link>
+            </div>
+      </div>
     </div>
   );
 };
