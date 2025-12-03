@@ -1,0 +1,16 @@
+.businessModelSection {
+    position: relative;
+    z-index: 1;
+}
+
+.businessModelSection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/mygainn_transparent.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.04;
+    z-index: -1;
+}

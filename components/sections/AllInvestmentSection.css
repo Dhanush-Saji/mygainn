@@ -1,0 +1,16 @@
+.allInvestmentSection {
+    position: relative;
+    z-index: 1;
+}
+
+.allInvestmentSection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/mygainn_transparent.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}

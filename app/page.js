@@ -1,5 +1,6 @@
 import AllInvestmentSection from "@/components/sections/AllInvestmentSection";
 import BecomeAuthorizedSection from "@/components/sections/BecomeAuthorizedSection";
+import BestAppSection from "@/components/sections/BestAppSection";
 import BusinessModelSection from "@/components/sections/BusinessModelSection";
 import HeroSection from "@/components/sections/HeroSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
@@ -15,6 +16,7 @@ export default function Home() {
     <BecomeAuthorizedSection />
     <BusinessModelSection />
     <TestimonialSection />
+    <BestAppSection />
    </div>
   );
 }

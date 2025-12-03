@@ -1,40 +1,31 @@
 import { GlowingEffect } from "../ui/glowing-effect";
+import { GrPieChart } from "react-icons/gr";
+import { FaChartLine } from "react-icons/fa";
+import { MdOutlineRocketLaunch } from "react-icons/md";
+import { GiCycle, GiGoldBar } from "react-icons/gi";
+import './AllInvestmentSection.css'
 
 const AllInvestmentSection = () => {
     const list = [
-        { title: 'Stocks' },
-        { title: 'Mutual Funds' },
-        { title: 'IPO' },
-        { title: 'Futures and Options' },
-        { title: 'MCX' },
+        { title: 'Stocks',icon:<FaChartLine className="text-(--cblue) scale-150" /> },
+        { title: 'Mutual Funds',icon:<GrPieChart className="text-(--cblue) scale-150" /> },
+        { title: 'IPO',icon:<MdOutlineRocketLaunch className="text-(--cblue) scale-150" /> },
+        { title: 'Futures and Options',icon:<GiCycle className="text-(--cblue) scale-150" /> },
+        { title: 'MCX',icon:<GiGoldBar className="text-(--cblue) scale-150" /> },
     ]
     return (
-        <div className="flex flex-col gap-8 p-22 bg-(--cblue2)">
+        <div className="allInvestmentSection flex flex-col gap-8 p-22 bg-(--cblue2)">
             <h1 className="font-extrabold text-5xl mx-auto text-white">All Your Investments Need In One Place</h1>
             <ul className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-4">
                 {
                 list.map((item, index) => (
                     <GridItem key={index}
-                    // icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
+                    icon={item?.icon}
                     title={item?.title}
                 />
-                    // <div className="flex flex-col items-center justify-center gap-2 bg-white rounded-xl p-4 w-full min-h-40" key={index}>
-                    //     <div className="flex justify-center items-center w-14 h-14 bg-(--cblue1) rounded-full"></div>
-                    //     <h2 className="font-bold text-2xl">{item.title}</h2>
-                    // </div>
                 ))
             }
             </ul>
-            {/* <div className="grid grid-cols-3 mt-16 gap-8 px-12">
-            {
-                list.map((item, index) => (
-                    <div key={index} className="flex flex-col items-center justify-center gap-2 bg-white rounded-xl p-4 w-full min-h-40" key={index}>
-                        <div className="flex justify-center items-center w-14 h-14 bg-(--cblue1) rounded-full"></div>
-                        <h2 className="font-bold text-2xl">{item.title}</h2>
-                    </div>
-                ))
-            }
-        </div> */}
         </div>
     );
 };

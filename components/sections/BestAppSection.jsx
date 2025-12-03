@@ -4,9 +4,8 @@ import { IoPersonOutline } from "react-icons/io5";
 import { PiHandshake } from "react-icons/pi";
 import { LiaConnectdevelop } from "react-icons/lia";
 import { BiBarChartAlt2 } from "react-icons/bi";
-import './BusinessModelSection.css'
 
-const BusinessModelSection = () => {
+const BestAppSection = () => {
     const list = [
         {title:'Franchisee',icons:<BsShop className="text-(--cblue) scale-150" />},
         {title:'Employee To Entrepreneur Program',icons:<IoPersonOutline className="text-(--cblue) scale-150" />},
@@ -38,4 +37,4 @@ const BusinessModelSection = () => {
   );
 };
 
-export default BusinessModelSection;
+export default BestAppSection;

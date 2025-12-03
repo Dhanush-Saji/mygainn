@@ -6,7 +6,7 @@ import { ChevronDown } from 'lucide-react';
 
 const NavItem = ({ menuItems = [] }) => {
   return (
-    <nav className='topbarLists flex'>
+    <nav aria-label='primary' className='topbarLists flex'>
       {
         menuItems?.length > 0 && (
           <ul className='flex gap-4 m-0' role='menubar' tabIndex={1}>
