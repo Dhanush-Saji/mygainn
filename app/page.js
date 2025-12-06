@@ -3,6 +3,7 @@ import BecomeAuthorizedSection from "@/components/sections/BecomeAuthorizedSecti
 import BestAppSection from "@/components/sections/BestAppSection";
 import BusinessModelSection from "@/components/sections/BusinessModelSection";
 import HeroSection from "@/components/sections/HeroSection";
+import LatestBlogSection from "@/components/sections/LatestBlogSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
 import WhyChoose from "@/components/sections/WhyChoose";
 import Image from "next/image";
@@ -17,6 +18,7 @@ export default function Home() {
     <BusinessModelSection />
     <TestimonialSection />
     <BestAppSection />
+    <LatestBlogSection />
    </div>
   );
 }
